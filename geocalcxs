@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Geo::Calc::XS;
+
+@ARGV == 3 or die "usage: $0 <lat> <lon> <opname>\n$0 40.417875 -3.710205 get_lat";
+my $gc = Geo::Calc::XS->new(lat => $ARGV[0], lon => $ARGV[1]);
+my $subname = $ARGV[2];
+my $value = $gc->$subname();
+print "$value\n";

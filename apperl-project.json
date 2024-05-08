@@ -1,0 +1,12 @@
+{
+   "apperl_configs" : {
+      "geocalcxs" : {
+         "dest" : "geocalcxs.com",
+         "desc" : "Geo::Calc::XS cli",
+         "base" : "full",
+         "install_modules" : ["Geo-Calc-XS-0.33.tar.gz"],
+         "zip_extra_files" : { "bin" : ["geocalcxs"] }
+      }
+   },
+   "defaultconfig" : "geocalcxs"
+}
